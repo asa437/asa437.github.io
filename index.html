@@ -1,100 +1,158 @@
-  
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asa Portfolio</title>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            /* background:rgba(233, 229, 13, 0.7); */
+        }
+        .box{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            border: 1px solid #000;
+            overflow: hidden;
+            text-align: center;
+            border-radius:15%;
+            margin:10px;
+            display:inline-block;
+        }
+
+        .innerBox{
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(92, 166, 196);
+            opacity:0.7;
+            transition-duration: 2s;
+        }
+        .box:hover .innerBox{
+            top: 0;
+        }
+        .Asanav{
+            background: linear-gradient(47deg, rgba(255, 147, 193, 0.8)23%, rgba(252, 255, 167, 0.7)57%);
+            background: -moz-linear-gradient(47deg, rgba(255, 147, 193, 0.8)23%, rgba(252, 255, 167, 0.7)57%);
+            background: -webkit-linear-gradient(47deg, rgba(255, 147, 193, 0.8)23%, rgba(252, 255, 167, 0.7)57%);
+            background: -o-linear-gradient(47deg, rgba(255, 147, 193, 0.8)23%, rgba(252, 255, 167, 0.7)57%);
+        }
+    </style>
 </head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<style>
-body{
-    text-align:center;
-    background-color:beige
-}
-
-.asabox{
-      width: 300px;
-      box-shadow: 3px 3px 6px 0px #8a2a21;
-      background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-      background-color:#c62d1f;
-      border-radius:17px;
-      border:4px solid #d02718;
-      display:inline-block;
-      cursor:pointer;
-      color:#ffffff;
-      font-family:Arial;
-      font-size:22px;
-      padding:10px 55px !important;
-      text-decoration:none;
-      text-shadow:0px 1px 0px #810e05;
-    }
-
-.asabox:hover {
-      background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
-      background-color:#f24437;
-    }
-
-.asaline{
-    width: 58vw;
-    height: 180px;
-    border:1px solid red;
-    margin:auto;
-}
-
-</style>
-
-
 <body>
 
-<h1 class="py-3">Asa Portfolio</h1>
+<nav class="navbar navbar-expand-lg Asanav ">
+    <a class="navbar-brand text-white font-weight-bold ml-2" href="#">Gallery/作品集</a>
+</nav>
 
+<div class="container">
+<!-- ------------------------------------------------------------------------------------------------- -->
+<a href="http://220.128.133.15/s1090208/PHP-Resume/?do=galf" target="_blank" > 
+    <div class="box">
+    <img src="resume-img\gal\phpresume.png" style="width:300px;height:300px ">
+        <div class="innerBox">
+            <div class="mx-auto my-auto text-white" style="font-size:35px;padding-top:40%">Resume<br>(履歷)</div> 
+        </div>
+    </div>
+</a>
+<!-- ------------------------------------------------------------------------------------------------- -->
+<a href="http://220.128.133.15/s1090208/Resume/2.PHP+MySQL_works/Calendary/" target="_blank" > 
+    <div class="box">
+    <img src="resume-img\gal\Calendar.png" style="width:300px;height:300px ">
+        <div class="innerBox">
+            <div class="mx-auto my-auto text-white" style="font-size:35px;padding-top:40%">Calendar</div> 
+        </div>
+    </div>
+</a>
+<!-- ------------------------------------------------------------------------------------------------- -->
+<a href="http://220.128.133.15/s1090208/Invoice/" target="_blank" > 
+    <div class="box">
+    <img src="resume-img\gal\Invoice.png" style="width:300px;height:300px ">
+        <div class="innerBox">
+            <div class="mx-auto my-auto text-white" style="font-size:35px;padding-top:40%">統一發票對獎</div> 
+        </div>
+    </div>
+</a>
+<!-- ------------------------------------------------------------------------------------------------- -->
+<a href="http://220.128.133.15/s1090208/api-AirQuality/" target="_blank" > 
+    <div class="box">
+    <img src="resume-img\gal\api-AirQuality.png" style="width:300px;height:300px ">
+        <div class="innerBox">
+            <div class="mx-auto my-auto text-white" style="font-size:35px;padding-top:40%">api-AirQuality</div> 
+        </div>
+    </div>
+</a>
+<!-- ------------------------------------------------------------------------------------------------- -->
+<a href="http://220.128.133.15/s1090208/5.JavaScript-Work/JS-DigClock/" target="_blank" > 
+    <div class="box">
+    <img src="resume-img\gal\JS-DigCloc.png" style="width:300px;height:300px ">
+        <div class="innerBox">
+            <div class="mx-auto my-auto text-white" style="font-size:35px;padding-top:40%">JS-DigClock<br>數位時鐘</div> 
+        </div>
+    </div>
+</a>
+<!-- ------------------------------------------------------------------------------------------------- -->
+<a href="http://220.128.133.15/s1090208/5.JavaScript-Work/JS-AnalogClock/" target="_blank" > 
+    <div class="box">
+    <img src="resume-img\gal\AnalogClock.png" style="width:300px;height:300px ">
+        <div class="innerBox">
+            <div class="mx-auto my-auto text-white" style="font-size:35px;padding-top:40%">AnalogClock<br>(類比時鐘)</div> 
+        </div>
+    </div>
+</a>
+<!-- ------------------------------------------------------------------------------------------------- -->
+<a href="http://220.128.133.15/s1090208/5.JavaScript-Work/JS-2_1_AlternativeGame/" target="_blank" > 
+    <div class="box">
+    <img src="resume-img\gal\21game.png" style="width:300px;height:300px ">
+        <div class="innerBox">
+            <div class="mx-auto my-auto text-white" style="font-size:35px;padding-top:40%">Que-game<br>(二選一大問哉)</div> 
+        </div>
+    </div>
+</a>
+<!-- ------------------------------------------------------------------------------------------------- -->
+<a href="http://220.128.133.15/s1090208/5.JavaScript-Work/JS-ColorChange/" target="_blank" > 
+    <div class="box">
+    <img src="resume-img\gal\ColorPlay.png" style="width:300px;height:300px ">
+        <div class="innerBox">
+            <div class="mx-auto my-auto text-white" style="font-size:35px;padding-top:40%">ColorPlay<br>顏色好好玩</div> 
+        </div>
+    </div>
+</a>
+<!-- ------------------------------------------------------------------------------------------------- -->
+<a href="http://220.128.133.15/s1090208/Resume/4.Illustrator_works/VI%e8%a8%ad%e8%a8%8801-2.png" target="_blank" > 
+    <div class="box">
+    <img src="resume-img\gal\LOGO.png" style="width:300px;height:300px ">
+        <div class="innerBox">
+            <div class="mx-auto my-auto text-white" style="font-size:35px;padding-top:40%">LOG-Design<br>by Illustrator</div> 
+        </div>
+    </div>
+</a>
+<!-- ------------------------------------------------------------------------------------------------- -->
+<a href="http://220.128.133.15/s1090208/Resume/3.Photoshop_works/3.Icecream.png" target="_blank" > 
+    <div class="box">
+    <img src="resume-img\gal\Icecream.png" style="width:300px;height:300px ">
+        <div class="innerBox">
+            <div class="mx-auto my-auto text-white" style="font-size:35px;padding-top:40%">Icecream-poster<br>by Photoshop</div> 
+        </div>
+    </div>
+</a>
+<!-- ------------------------------------------------------------------------------------------------- -->
+<a href="http://220.128.133.15/s1090208/Resume/3.Photoshop_works/2.WineMark.png" target="_blank" > 
+    <div class="box">
+    <img src="resume-img\gal\WineMark.png" style="width:300px;height:300px ">
+        <div class="innerBox">
+            <div class="mx-auto my-auto text-white" style="font-size:35px;padding-top:40%">WineMark-poster<br>by Photoshop</div> 
+        </div>
+    </div>
+</a>
+<!-- ------------------------------------------------------------------------------------------------- -->
 
-
-
-<div class="h3 container my-1"> Resume </div>
-<a class="asabox col-12 my-1" href="http://220.128.133.15/s1090208/Bootstrap-Resume/#AsaLiu">onepage-Resume</a>
-<a class="asabox col-12 my-1" href="http://220.128.133.15/s1090208/PHP-Resume/">PHP-Resume</a>
-<a class="asabox col-12 my-1" href="https://www.cakeresume.com/s--hhVvcuzbm-cCbQQQLpHEfQ--/asaliu">Cake-Resume</a>
-<br>
-
-
-<br>
-
-    <div class="h3 container my-1"> PHP Portfolio</div>
-        <a class="asabox" href="http://220.128.133.15/s1090208/Resume/2.PHP+MySQL_works/Calendary/">萬年曆</a>
-        <br>
-
-    <div class="h3 container my-1"> MySQL Portfolio</div>
-        <a class="asabox" href="http://220.128.133.15/s1090208/Invoice/">統一發票對獎系統</a>
-        <br>
-
-    <!-- <div class="h3 container py-1"> CSS Portfolio</div>
-        <a class="asabox" href="http://220.128.133.15/s1090208/Resume/1.Html+Bootstrap_works/AnimationWork/AnimationWork.html">Animation 動畫</a>
-        <br> -->
-
-    <div class="h3 container my-1"> JavaScript Portfolio</div>
-        <a class="asabox col-12 my-1" href="http://220.128.133.15/s1090208/5.JavaScript-Work/JS-2_1_AlternativeGame/">二選一大哉問</a>
-        <a class="asabox col-12 my-1" href="http://220.128.133.15/s1090208/5.JavaScript-Work/JS-DigClock/">數位時鐘</a>
-        <a class="asabox col-12 my-1" href="http://220.128.133.15/s1090208/5.JavaScript-Work/JS-AnalogClock/">類比時鐘</a>
-        <a class="asabox col-12 my-1" href="http://220.128.133.15/s1090208/5.JavaScript-Work/JS-ColorChange/">顏色好好玩</a>
-        <br>
-
-    <div class="h3 container my-1"> Illustrator Portfolio</div>
-        <a class="asabox my-1" href="http://220.128.133.15/s1090208/Resume/4.Illustrator_works/Mark.png">Mark</a>
-        <a class="asabox my-1" href="http://220.128.133.15/s1090208/Resume/4.Illustrator_works/Fish.png">鯉魚旗</a>
-        <a class="asabox my-1" href="http://220.128.133.15/s1090208/Resume/4.Illustrator_works/VI%e8%a8%ad%e8%a8%8801-2.png">LOGO設計</a>
-        <br>
-
-
-    <div class="h3 container my-1"> Photoshop Portfolio</div>
-        <a class="asabox my-1" href="http://220.128.133.15/s1090208/Resume/3.Photoshop_works/2.WineMark.png">Wine Mark</a>
-        <a class="asabox my-1" href="http://220.128.133.15/s1090208/Resume/3.Photoshop_works/3.Icecream.png">Ice cream Poster</a>
-
-
- 
- 
+</div>
 
 </body>
 </html>
